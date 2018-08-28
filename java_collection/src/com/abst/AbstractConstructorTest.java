@@ -4,7 +4,7 @@ package com.abst;
 
 
 public class AbstractConstructorTest {
-	// gouorab
+	// gouorab ssss
 	public static void main(String args[]) {
 		  
 	      Server server = new Tomcat("Apache Tomcat");
