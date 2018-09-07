@@ -1,5 +1,6 @@
 package com.inter;
 
 public interface Interface2 {
-	 default public void Test(){ System.out.println("default2"); };
+	 public void Test();
+	 public void Test(int u);
 }

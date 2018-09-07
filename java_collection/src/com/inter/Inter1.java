@@ -4,14 +4,22 @@ public class Inter1 implements InterfaceTest, Interface2{
 	
 	
 	public static void main(String[] args) {
-		Inter1 inn=new Inter1();
+		InterfaceTest inn=new Inter1();
 		
 		inn.Test();
-		String t=new String();
+		Runnable r = () -> {
+			System.out.println("sdsdf"); ;
+		};
+		String str = "knowledge";
+		String s = str;
+		str = str.concat(" base");
+		System.out.println(s + str);
 		
-		int i = 21;
+		//String t=new String();
+		
+		//int i = 21;
 		 
-        overloadedMethod(i);
+        //overloadedMethod(i);
 		
 		
 	}
@@ -28,8 +36,13 @@ public class Inter1 implements InterfaceTest, Interface2{
 	@Override
 	public void Test() {
 		// TODO Auto-generated method stub
-		Interface2.super.Test();
+		//Interface2.super.Test();
 		InterfaceTest.super.Test();
+	}
+	@Override
+	public void Test(int u) {
+		// TODO Auto-generated method stub
+		
 	}
 
 }
