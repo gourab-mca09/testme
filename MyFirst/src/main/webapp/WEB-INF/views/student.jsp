@@ -11,6 +11,7 @@
 	</style>
    </head>
    <body>
+   <%-- --%>
 	<form:errors path="SpringWeb.*" />
       <h2>Student Information</h2>
       <form:form method = "POST"  action = "addStudent" modelAttribute="SpringWeb"  >
