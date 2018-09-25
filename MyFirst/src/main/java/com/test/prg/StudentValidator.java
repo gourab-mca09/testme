@@ -30,10 +30,7 @@ public class StudentValidator implements Validator {
                 	errors.rejectValue("students[" + i + "].age", "field.required", "STUDENT AGE IS 0 - 100 " );
                 	//errors.addAllErrors(errors);
                 }
-                if(objStudent.getDob() != null && (objStudent.getAge() < 0 || objStudent.getAge() >100 )){
-                	errors.rejectValue("students[" + i + "].age", "field.required", "STUDENT AGE IS 0 - 100 " );
-                	//errors.addAllErrors(errors);
-                }
+                
             }
 
            

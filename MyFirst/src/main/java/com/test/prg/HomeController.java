@@ -47,10 +47,10 @@ public class HomeController {
 
 	@InitBinder
 	private void initBinder(HttpServletRequest request, ServletRequestDataBinder binder) {
-		binder.setValidator(validator);
 		SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
 		dateFormat.setLenient(false);
-		binder.registerCustomEditor(Date.class, new CustomDateEditor(dateFormat, true) );
+		binder.registerCustomEditor(Date.class, null, new CustomDateEditor(dateFormat, true, 10) );
+		binder.setValidator(validator);		
 	}
 	
 	@RequestMapping(value = {"/","/home" }, method = RequestMethod.GET)
@@ -82,8 +82,8 @@ public class HomeController {
 		logger.info("Welcome home! The client locale is {}.");                       
 		
 		if(objBindingResult.hasErrors()){
-			//return "student";
-			throw new UserDefinedException("Exception", "UserDefine Exception");
+			return "student";
+			//throw new UserDefinedException("Exception", "UserDefine Exception");
 		}
 		
 		Date date = new Date();
