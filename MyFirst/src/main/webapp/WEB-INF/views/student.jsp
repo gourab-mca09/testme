@@ -26,7 +26,7 @@
 		<c:forEach items="${SpringWeb.students}" var="student" varStatus="status">
 			<tr>
 				<td align="center">${status.count}</td>
-				<td><input name="students[${status.index}].age" value="${student.age}"/>  <form:errors path="students[${status.index}].age" cssClass="error"/></td>
+				<td><input name="students[${status.index}].age" value="${student.age}"/><form:errors path="students[${status.index}].age" cssClass="error"/></td>
 				<td><input name="students[${status.index}].name" value="${student.name}"/><form:errors path="students[${status.index}].name" cssClass="error"/></td>
 				<td><input name="students[${status.index}].id" value="${student.id}"/><form:errors path="students[${status.index}].id" cssClass="error"/></td>
 				<td><input name="students[${status.index}].dob" value="${student.dob}"/><form:errors path="students[${status.index}].dob" cssClass="error"/></td>
