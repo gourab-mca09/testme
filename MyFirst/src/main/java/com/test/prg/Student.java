@@ -12,16 +12,16 @@ import org.springframework.validation.Validator;
 
 public class Student{
 	
-	//@NotEmpty(message="Age cannot be empty")
-	//@Size(min=1,max=2,message="Age Size should be between 1 to 2")
+	@NotEmpty(message="Age cannot be empty")
+	@Size(min=1,max=2,message="Age Size should be between 1 to 2")
 	private Integer age;
 	
-	//@NotEmpty(message="Name cannot be empty")
-	//@Size(min=1,max=50,message="Id Size should be between 1 to 50")
+	@NotEmpty(message="Name cannot be empty")
+	@Size(min=4,max=50,message="Id Size should be between 1 to 50")
 	private String name;
 	
-	//@NotEmpty(message="ID cannot be empty")
-	//@Size(min=1,max=10,message="Id Size should be between 1 to 10")
+	@NotEmpty(message="ID cannot be empty")
+	@Size(min=1,max=10,message="Id Size should be between 1 to 10")
 	private Integer id;
 	
 	@DateTimeFormat(pattern = "dd/MM/yyyy")	

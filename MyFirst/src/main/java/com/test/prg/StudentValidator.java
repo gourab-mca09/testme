@@ -14,9 +14,9 @@ public class StudentValidator implements Validator {
 	}
 
 	@Override
-	public void validate(Object target, Errors errors) {		
+	public void validate(Object target, Errors errors) {
 		StudentForm studentForm = (StudentForm) target;
-		for (int i = 0;studentForm != null &&  i < studentForm.getStudents().size(); i++) {
+		/*for (int i = 0;studentForm != null &&  i < studentForm.getStudents().size(); i++) {
             Student objStudent = studentForm.getStudents().get(i);
 
             if(objStudent != null) {
@@ -35,7 +35,7 @@ public class StudentValidator implements Validator {
 
            
         }
-		
+		*/
 	}
 		
 

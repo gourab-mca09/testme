@@ -12,8 +12,5 @@ public class StudentForm {
 	public void setStudents(List<Student> students) {
 		this.students = students;
 	}
-
-	
-	
 	
 }

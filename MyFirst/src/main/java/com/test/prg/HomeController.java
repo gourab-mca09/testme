@@ -75,7 +75,7 @@ public class HomeController {
 	public Student createStudentModel() {	
 		return new Student();
 	}*/
-	
+	 
 	@RequestMapping(value = "/addStudent")
 	public String home(@Valid @ModelAttribute("SpringWeb") StudentForm studentFrom, BindingResult objBindingResult) throws UserDefinedException, Exception{
 		logger.info("Welcome home! The client locale is {}.");                       
